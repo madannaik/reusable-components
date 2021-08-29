@@ -53,14 +53,6 @@
     &:hover {
       background: rgba(41, 98, 255, 0.1);
     }
-    &:disabled{
-      color: #9E9E9E;
-
-      &:hover{
-        background: transparent;
-      }
-
-    }
   }
   &-outline {
     border: 1px solid var(--primary-color);

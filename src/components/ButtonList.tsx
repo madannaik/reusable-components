@@ -33,12 +33,6 @@ const ButtonList = () => {
           <h1 className="heading">{"<Button disabled />"}</h1>
           <Button disabled>Default</Button>
         </span>
-        <span className="list__type--ele">
-          <h1 className="heading">{"<Button disabled />"}</h1>
-          <Button disabled variant="text">
-            Default
-          </Button>
-        </span>
       </div>
       {/* Button shadow disables */}
       <div className="list__type">
