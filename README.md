@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://https://madannaik.github.io/reusable-components/">
+    <a href="https://madannaik.github.io/reusable-components/" target="_blank">
       Demo
     </a>
     <span> | </span>
