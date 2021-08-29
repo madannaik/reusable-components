@@ -1,0 +1,42 @@
+.list {
+  margin-left: 4rem;
+
+  &__header {
+    font-family: Poppins;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__type {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    &--ele {
+      display: inline-block;
+      margin: 2rem;
+    }
+    .heading {
+      font-family: Ubuntu Mono;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 12px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+  &__footer {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 17px;
+    text-align: start;
+    color: #a9a9a9;
+  }
+}

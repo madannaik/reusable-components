@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  flex-flow: row nowrap;
+  &__nav {
+    width: 15vw;
+    height: 100vh;
+    background: #fafbfd;
+  }
+  &__body {
+    width: 85vw;
+    height: 100vh;
+    background: #ffffff;
+  }
+  // .active{
+  //   margin-left: 0;
+  // }
+  @media (min-width:320px){
+    // &__nav{
+    //   margin-left: -15vw;
+    // }
+  }
+}
