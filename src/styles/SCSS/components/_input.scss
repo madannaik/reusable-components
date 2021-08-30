@@ -1,0 +1,111 @@
+.int {
+  width: 100%;
+  font-size: 1.4rem;
+  position: relative;
+  .starticon {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    padding: 0 1rem;
+    top: 38%;
+    transform: translateY(-50%);
+
+    & ~ .int__field {
+      padding-left: 3rem;
+    }
+  }
+  .endicon {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    & ~ .int__field {
+      padding-right: 2.7rem;
+    }
+  }
+  .full-width {
+    width: 100%;
+  }
+  &__field {
+    outline: none;
+    border: 1px solid #828282;
+    border-radius: 8px;
+    resize: none;
+    &:hover {
+      border: 1px solid var(--color-grey-1);
+    }
+    &:focus {
+      border: 1px solid var(--primary-color);
+      & ~ .int__label {
+        color: var(--primary-color);
+      }
+      & ~ .int__helper {
+        color: var(--primary-color);
+      }
+    }
+    &::placeholder {
+      font-family: Noto Sans JP;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      font-size: 1.4rem;
+    }
+    &:disabled {
+      background: #f2f2f2;
+      border: 1px solid #e0e0e0;
+    }
+    &--sm {
+      padding: 0.8rem 1.3rem;
+    }
+    &--md {
+      padding: 1.4rem 1.8rem;
+    }
+    &--full-width {
+      width: 100%;
+    }
+  }
+  &__label {
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    font-family: Noto Sans JP;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  &__helper {
+    font-family: Noto Sans JP;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #828282;
+  }
+  .error {
+    border: 1px solid var(--danger-color);
+
+    & ~ label {
+      color: var(--danger-color);
+    }
+    &:hover {
+      border: 1px solid var(--color-grey-1);
+    }
+    &:focus {
+      border: 1px solid var(--primary-color);
+      & ~ label {
+        color: var(--primary-color);
+      }
+    }
+    & ~ p {
+      color: var(--danger-color);
+    }
+  }
+}

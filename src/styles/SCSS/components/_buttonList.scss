@@ -20,6 +20,7 @@
       display: inline-block;
       margin: 2rem;
     }
+
     .heading {
       font-family: Ubuntu Mono;
       font-size: 1rem;
@@ -28,6 +29,9 @@
       line-height: 12px;
       letter-spacing: 0em;
       text-align: left;
+    }
+    .margin-top{
+      margin-bottom: 3rem;
     }
   }
   &__footer {

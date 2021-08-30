@@ -9,7 +9,7 @@ export const Button: React.FC<ButtonProps> = ({
   size,
   startIcons,
   variant,
-  children,
+  children
 }) => {
   const prefix = "btn-";
   const classname =

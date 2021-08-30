@@ -2,6 +2,7 @@
   width: 100%;
   height: 100%;
   position: relative;
+  
   &__heading {
     margin-top: 3rem;
     margin-bottom: 12rem;
@@ -26,6 +27,9 @@
     text-align: left;
     list-style: none;
     text-decoration: none;
+    a{
+      text-decoration: none;
+    }
     &--item {
       color: #9e9e9e;
       cursor: pointer;
@@ -38,6 +42,21 @@
         color: #090f31;
       }
     }
+    a > &--item {
+      color: #9e9e9e;
+      cursor: pointer;
+      text-align: left;
+      padding: 1.5rem 0;
+      padding-left: 25%;
+      text-decoration: none;
+
+      &:nth-child(4) {
+        color: #090f31;
+      }
+    }
+  }
+  .active{
+    color: #090f31;
   }
   @media (min-width: 320px) {
     // position: absolute;
@@ -51,7 +70,7 @@
     //   top: 0;
     //   width: 4rem;
     //   color: white;
-    //   height: 4rem; 
+    //   height: 4rem;
     //   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.123);
     //   border-radius: .5rem;
     //   // background-color: #090f31;
