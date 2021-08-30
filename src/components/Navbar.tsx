@@ -1,26 +1,32 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 export default function Navbar() {
-  // const onClick = () => {};
-
   return (
     <nav className="navbar">
       <header className="navbar__heading">
         <span>Dev</span>challange.io
       </header>
-      <ul className="navbar__link" key={1}>
-        <Link to={"/input"}>
-          <li className="navbar__link--item">Colors</li>
-        </Link>
-        <li className="navbar__link--item">Typography</li>
-        <li className="navbar__link--item">Spaces</li>
-        <Link to={"/"} key={1}>
-          <li className="navbar__link--item ">Button</li>
-        </Link>
-        <li className="navbar__link--item">Input</li>
-        <li className="navbar__link--item">Grid</li>
-      </ul>
+      <div className="navbar__link">
+        <NavLink activeStyle={{ color: "#090f31" }} to={"/colors"}>
+          Colors
+        </NavLink>
+        <NavLink activeStyle={{ color: "#090f31" }} to={"/typo"}>
+          Typography
+        </NavLink>
+        <NavLink activeStyle={{ color: "#090f31" }} to={"/space"}>
+          Spaces
+        </NavLink>
+        <NavLink activeStyle={{ color: "#090f31" }} to={"/button"}>
+          Button
+        </NavLink>
+        <NavLink activeStyle={{ color: "#090f31" }} to={"/input"}>
+          Input
+        </NavLink>
+        <NavLink activeStyle={{ color: "#090f31" }} to={"/grid"}>
+          grid
+        </NavLink>
+      </div>
     </nav>
   );
 }

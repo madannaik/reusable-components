@@ -62,7 +62,7 @@ export const InputList = () => {
           <Input label="Label" placeholder="text" endIcon={<FaCreditCard />} />
         </span>
       </div>
-      <div className="list__type">
+      <div className="list__type" style={{alignItems:"center"}}>
         <span className="list__type--ele">
           <h1 className="heading margin-top">{'<Input size="sm" />'}</h1>
           <Input
