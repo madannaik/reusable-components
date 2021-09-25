@@ -14,9 +14,14 @@
   // .active{
   //   margin-left: 0;
   // }
-  @media (min-width: 320px) {
-    // &__nav{
-    //   margin-left: -15vw;
-    // }
+  @media (max-width: 800px) {
+    flex-flow: column nowrap;
+
+    .main__nav{
+      width: 100vw;
+      height: 10rem;
+      min-height: 10rem;
+    }
+
   }
 }

@@ -80,7 +80,7 @@ const ButtonList = () => {
         </span>
       </div>
       {/* Button with different colors */}
-      <div className="list__type">
+      <div className="list__type" style={{flexWrap:"wrap"}}>
         <span className="list__type--ele">
           <h1 className="heading">{'<Button color="default"> '}</h1>
           <Button color="default" size="sm">
